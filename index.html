@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Holiday Cards TO artist invitation for the 2026 season." />
+  <title>Holiday Cards TO — Artist Invitation 2026</title>
+  <style>
+    :root{
+      --ink:#183330;
+      --teal:#0f6b68;
+      --teal-2:#2a8b84;
+      --mint:#e8f2ef;
+      --mint-2:#f6faf8;
+      --coral:#f3a489;
+      --blush:#fff3ed;
+      --white:#ffffff;
+      --line:#d9e5df;
+      --muted:#5f7471;
+      --shadow:0 18px 50px rgba(15,107,104,.08);
+      --radius:28px;
+      --radius-sm:18px;
+      --max:1120px;
+    }
+
+    *{box-sizing:border-box}
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      background:var(--white);
+      color:var(--ink);
+      font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    a{color:inherit}
+
+    .shell{
+      width:min(calc(100% - 36px), var(--max));
+      margin:0 auto;
+    }
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(255,255,255,.94);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(217,229,223,.8);
+    }
+
+    .header-inner{
+      min-height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .brand{
+      font-weight:800;
+      letter-spacing:-.03em;
+      text-decoration:none;
+    }
+
+    .nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .nav a{
+      text-decoration:none;
+      font-size:14px;
+      color:var(--muted);
+      padding:8px 12px;
+      border-radius:999px;
+    }
+
+    .nav a:hover{
+      background:var(--mint);
+      color:var(--teal);
+    }
+
+    main{
+      padding:34px 0 56px;
+    }
+
+    .hero{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:var(--white);
+    }
+
+    .hero-bar{
+      height:14px;
+      background:linear-gradient(90deg,var(--teal),var(--teal-2));
+    }
+
+    .hero-inner{
+      padding:64px 58px 54px;
+    }
+
+    .eyebrow,
+    .section-label{
+      display:inline-block;
+      color:var(--teal);
+      background:var(--mint);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    h1,h2,h3,p{margin-top:0}
+
+    h1{
+      max-width:900px;
+      margin:20px 0 20px;
+      font-size:clamp(54px,8vw,92px);
+      line-height:.92;
+      letter-spacing:-.055em;
+    }
+
+    .hero-copy{
+      max-width:760px;
+      margin:0;
+      color:var(--muted);
+      font-size:20px;
+    }
+
+    .origin{
+      margin-top:38px;
+      padding-top:30px;
+      border-top:1px solid var(--line);
+      display:grid;
+      grid-template-columns:190px 1fr;
+      gap:34px;
+    }
+
+    .origin h2{
+      font-size:18px;
+      margin:0;
+    }
+
+    .origin p{
+      margin:0;
+      max-width:760px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .manifesto{
+      margin-top:34px;
+      border-radius:22px;
+      background:var(--ink);
+      color:var(--white);
+      padding:34px 36px;
+    }
+
+    .manifesto p{
+      max-width:900px;
+      margin:0;
+      font-size:clamp(22px,3vw,31px);
+      line-height:1.28;
+      letter-spacing:-.02em;
+    }
+
+    .section{
+      margin-top:26px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:48px;
+      background:var(--white);
+    }
+
+    .section-head{
+      max-width:820px;
+      margin-bottom:30px;
+    }
+
+    .section h2{
+      margin:12px 0 10px;
+      font-size:clamp(34px,5vw,54px);
+      line-height:1.02;
+      letter-spacing:-.045em;
+    }
+
+    .section-intro{
+      margin:0;
+      color:var(--muted);
+      font-size:18px;
+    }
+
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+    }
+
+    .benefit{
+      background:var(--mint-2);
+      border:1px solid #dfeae5;
+      border-radius:var(--radius-sm);
+      padding:26px;
+    }
+
+    .number{
+      width:38px;
+      height:38px;
+      display:grid;
+      place-items:center;
+      margin-bottom:16px;
+      border-radius:50%;
+      background:var(--teal);
+      color:var(--white);
+      font-size:12px;
+      font-weight:800;
+    }
+
+    .benefit h3,
+    .commitment h3,
+    .faq h3{
+      margin-bottom:6px;
+      font-size:19px;
+      letter-spacing:-.02em;
+    }
+
+    .benefit p,
+    .commitment p,
+    .faq p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .commitments{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      column-gap:34px;
+    }
+
+    .commitment{
+      padding:20px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .soft-note{
+      margin-top:26px;
+      padding:22px 24px;
+      border-radius:var(--radius-sm);
+      background:var(--mint);
+    }
+
+    .soft-note p{
+      margin:0;
+    }
+
+    .growth-statement{
+      margin-top:26px;
+      padding:34px 36px;
+      border-radius:22px;
+      background:linear-gradient(135deg,var(--teal),var(--teal-2));
+      color:var(--white);
+    }
+
+    .growth-statement p{
+      max-width:900px;
+      margin:0;
+      font-size:clamp(22px,3vw,30px);
+      line-height:1.3;
+      letter-spacing:-.02em;
+    }
+
+    .timeline-title{
+      margin:42px 0 8px;
+      font-size:27px;
+      letter-spacing:-.03em;
+    }
+
+    .timeline-intro{
+      color:var(--muted);
+      margin-bottom:16px;
+    }
+
+    .timeline-row{
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:24px;
+      padding:18px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .timeline-row:last-child{
+      border-bottom:1px solid var(--line);
+    }
+
+    .timeline-date{
+      color:var(--teal);
+      font-weight:800;
+    }
+
+    .timeline-detail{
+      color:var(--muted);
+    }
+
+    .money{
+      background:var(--blush);
+      border:1px solid #f1c4b2;
+      border-radius:var(--radius-sm);
+      padding:26px;
+    }
+
+    .money h3{
+      margin:0 0 7px;
+      color:#9d4e38;
+      font-size:21px;
+    }
+
+    .money p{
+      margin:0;
+      color:#745c54;
+    }
+
+    .faq-list{
+      margin-top:32px;
+    }
+
+    .faq{
+      padding:19px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .faq:last-child{
+      border-bottom:1px solid var(--line);
+    }
+
+    .cta{
+      margin-top:26px;
+      padding:52px 40px;
+      border-radius:var(--radius);
+      text-align:center;
+      color:var(--white);
+      background:var(--ink);
+    }
+
+    .cta h2{
+      margin:0 0 12px;
+      font-size:clamp(40px,6vw,64px);
+      line-height:1;
+      letter-spacing:-.045em;
+    }
+
+    .cta p{
+      max-width:700px;
+      margin:0 auto 24px;
+      color:#d9e5df;
+      font-size:17px;
+    }
+
+    .button{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:999px;
+      background:var(--coral);
+      color:var(--ink);
+      text-decoration:none;
+      font-weight:800;
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+    }
+
+    .footer{
+      padding:28px 0 8px;
+      text-align:center;
+      color:#7a8e8b;
+      font-size:13px;
+    }
+
+    @media (max-width:760px){
+      .site-header{position:static}
+      .header-inner{padding:14px 0;align-items:flex-start;flex-direction:column;gap:10px}
+      .nav{gap:4px}
+      .nav a{padding:6px 9px;font-size:13px}
+      main{padding-top:20px}
+      .hero-inner{padding:38px 26px 28px}
+      h1{font-size:clamp(48px,16vw,70px)}
+      .hero-copy{font-size:18px}
+      .origin{grid-template-columns:1fr;gap:10px}
+      .manifesto{padding:26px}
+      .section{padding:30px 24px}
+      .benefit-grid,.commitments{grid-template-columns:1fr}
+      .timeline-row{grid-template-columns:1fr;gap:4px}
+      .cta{padding:40px 24px}
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      *{scroll-behavior:auto!important}
+      .button{transition:none}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top">Holiday Cards TO</a>
+      <nav class="nav" aria-label="Page sections">
+        <a href="#benefits">What you get</a>
+        <a href="#participation">Participation</a>
+        <a href="#growth">Growth</a>
+        <a href="#practical">Good to know</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bar"></div>
+      <div class="hero-inner">
+        <span class="eyebrow">Artist invitation • Holiday 2026</span>
+        <h1 id="hero-title">Make great cards.<br>Grow something together.</h1>
+        <p class="hero-copy">
+          We’re a small collective of independent artists who come together each holiday season
+          to create, promote and sell a curated collection of greeting cards.
+        </p>
+
+        <div class="origin">
+          <h2>How it started</h2>
+          <p>
+            The project began with a group of artist friends pooling their work and resources
+            to help each other make a little more money during an expensive time of year.
+            It has grown into a shared collection with professional production, an online shop,
+            collective marketing and growing wholesale opportunities.
+          </p>
+        </div>
+
+        <div class="manifesto">
+          <p>
+            The idea is simple: combine our creativity, audiences, relationships and resources
+            so everyone has the opportunity to sell more than they could working alone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="section-head">
+        <span class="section-label">What you get</span>
+        <h2 id="benefits-title">More than a place to list your cards.</h2>
+        <p class="section-intro">
+          The value of the collective is shared infrastructure, shared audiences and shared opportunity.
+          We handle many of the things that are harder for an independent artist to build alone.
+        </p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit">
+          <div class="number">01</div>
+          <h3>Professional production</h3>
+          <p>
+            Cards are professionally printed and produced in Toronto, with print specifications
+            and production support provided.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <div class="number">02</div>
+          <h3>Shared online shop</h3>
+          <p>
+            Your work is presented alongside a curated group of independent artists
+            in one central storefront.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <div class="number">03</div>
+          <h3>Collective marketing</h3>
+          <p>
+            Artists combine their audiences, relationships and promotional reach
+            rather than trying to market entirely on their own.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <div class="number">04</div>
+          <h3>Wholesale opportunities</h3>
+          <p>
+            We’re growing relationships with retailers and other buyers
+            to expand sales beyond the online shop.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="participation" aria-labelledby="participation-title">
+      <div class="section-head">
+        <span class="section-label">Participation</span>
+        <h2 id="participation-title">What we ask from artists</h2>
+        <p class="section-intro">
+          Participation means more than submitting artwork. Everyone should contribute to making
+          the collective stronger, but that contribution can look different depending on your
+          strengths, audience and capacity.
+        </p>
+      </div>
+
+      <div class="commitments">
+        <article class="commitment">
+          <h3>Bring strong work</h3>
+          <p>Contribute artwork that adds something distinctive to the collection.</p>
+        </article>
+
+        <article class="commitment">
+          <h3>Promote the collection</h3>
+          <p>Share launches, products and important sales moments with your own audience.</p>
+        </article>
+
+        <article class="commitment">
+          <h3>Help expand our reach</h3>
+          <p>Introduce retail, wholesale or promotional opportunities when possible.</p>
+        </article>
+
+        <article class="commitment">
+          <h3>Participate</h3>
+          <p>Stay engaged with important conversations and occasional group planning.</p>
+        </article>
+
+        <article class="commitment">
+          <h3>Meet agreed deadlines</h3>
+          <p>Submit artwork and required materials in time for the group to stay on schedule.</p>
+        </article>
+
+        <article class="commitment">
+          <h3>Think collectively</h3>
+          <p>Help build an opportunity that becomes stronger for everyone involved.</p>
+        </article>
+      </div>
+
+      <div class="soft-note">
+        <p>
+          <strong>Nobody is expected to do everything.</strong>
+          People can contribute in different ways. What matters is that everyone brings
+          something meaningful to the effort.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="growth" aria-labelledby="growth-title">
+      <div class="section-head">
+        <span class="section-label">Growing the collective</span>
+        <h2 id="growth-title">Why we’re adding new artists</h2>
+        <p class="section-intro">
+          We’re not interested in simply making the shop bigger. We’re looking for artists
+          who bring something new creatively, introduce the collection to new audiences
+          and want to help grow the opportunity with us.
+        </p>
+      </div>
+
+      <div class="growth-statement">
+        <p>
+          Adding an artist should expand the opportunity for everyone,
+          not simply add more designs competing for the same sales.
+        </p>
+      </div>
+
+      <h3 class="timeline-title">Holiday 2026 timeline</h3>
+      <p class="timeline-intro">
+        We’re already moving into the season, so artists joining this year should be comfortable
+        working within a fairly quick schedule.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="timeline-date">October 12</div>
+          <div class="timeline-detail">Final artwork and web graphics due.</div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-date">October 12–16</div>
+          <div class="timeline-detail">Digital product mockups and store setup.</div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-date">October 19</div>
+          <div class="timeline-detail">Online store soft launch.</div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-date">After Halloween</div>
+          <div class="timeline-detail">Broader public holiday launch.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="practical" aria-labelledby="practical-title">
+      <div class="section-head">
+        <span class="section-label">The practical stuff</span>
+        <h2 id="practical-title">The money part</h2>
+        <p class="section-intro">
+          We want everyone to understand exactly how the project works financially before
+          deciding whether to participate.
+        </p>
+      </div>
+
+      <div class="money">
+        <h3>Artist compensation</h3>
+        <p>
+          Artist earnings, production costs, wholesale pricing and payment details will be confirmed
+          with invited artists before anyone commits.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq">
+          <h3>Do I still own my artwork?</h3>
+          <p>Yes. Participating artists remain the owners of their artwork.</p>
+        </article>
+
+        <article class="faq">
+          <h3>Do I need to manage customer orders?</h3>
+          <p>No. Orders are handled through the shared online store and fulfilment process.</p>
+        </article>
+
+        <article class="faq">
+          <h3>How many designs do I need?</h3>
+          <p>We’ll work with each invited artist to determine an appropriate starting assortment.</p>
+        </article>
+
+        <article class="faq">
+          <h3>What files will I need to provide?</h3>
+          <p>We’ll provide print templates, specifications and web-image requirements.</p>
+        </article>
+
+        <article class="faq">
+          <h3>Do I have to attend lots of meetings?</h3>
+          <p>
+            No. We occasionally plan together, but the project is intended
+            to remain practical and manageable.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Interested?</h2>
+      <p>
+        If you received an invitation, it means we already think your work could be a great addition.
+        Ask us anything and decide whether it feels like a good fit for you too.
+      </p>
+      <a class="button" href="mailto:scotty@italicpress.com?subject=Holiday%20Cards%20TO%202026">Get in touch</a>
+    </section>
+
+    <footer class="footer">
+      Holiday Cards TO · Toronto · 2026
+    </footer>
+
+  </main>
+</body>
+</html>
