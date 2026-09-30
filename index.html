@@ -174,52 +174,21 @@
       line-height:1.28;
       letter-spacing:-.02em;
     }
-
-    .proof{
-      margin-top:26px;
-      display:grid;
-      grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);
-      gap:34px;
-      align-items:center;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:42px;
-      background:var(--white);
-    }
-
-    .proof-copy h2{
-      margin:12px 0 10px;
-      font-size:clamp(30px,4vw,46px);
-      line-height:1.02;
-      letter-spacing:-.04em;
-    }
-
-    .proof-copy p{
-      margin:0;
-      color:var(--muted);
-      font-size:16px;
-    }
-
-    .proof-image{
-      margin:0;
+    .shop-preview{
+      margin:26px 0 0;
       padding:10px;
       border:1px solid var(--line);
-      border-radius:20px;
-      background:var(--mint-2);
+      border-radius:var(--radius);
+      background:var(--white);
       box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
-    .proof-image img{
+    .shop-preview img{
       display:block;
       width:100%;
       height:auto;
-      border-radius:13px;
-    }
-
-    .proof-image figcaption{
-      padding:10px 4px 2px;
-      color:#7a8e8b;
-      font-size:12px;
+      border-radius:20px;
     }
 
     .section{
@@ -449,7 +418,6 @@
       .origin{grid-template-columns:1fr;gap:10px}
       .manifesto{padding:26px}
       .section{padding:30px 24px}
-      .proof{grid-template-columns:1fr;padding:28px 24px;gap:22px}
       .benefit-grid,.commitments{grid-template-columns:1fr}
       .timeline-row{grid-template-columns:1fr;gap:4px}
       .cta{padding:40px 24px}
@@ -507,24 +475,13 @@
     </section>
 
 
-    <section class="proof" aria-labelledby="proof-title">
-      <div class="proof-copy">
-        <span class="section-label">The existing shop</span>
-        <h2 id="proof-title">This is already a real thing.</h2>
-        <p>
-          A look at Holiday Cards TO from a previous season. The invitation is about joining
-          an established collective and helping us make the next version stronger.
-        </p>
-      </div>
-      <figure class="proof-image">
-        <img
-          src="assets/holidaycards-preview.webp"
-          alt="Preview of the Holiday Cards TO online shop from a previous season"
-          loading="lazy"
-        />
-        <figcaption>Holiday Cards TO, previous season.</figcaption>
-      </figure>
-    </section>
+    <figure class="shop-preview">
+      <img
+        src="assets/holidaycards-preview.webp"
+        alt="Preview of the Holiday Cards TO online shop"
+        loading="lazy"
+      />
+    </figure>
 
     <section class="section" id="benefits" aria-labelledby="benefits-title">
       <div class="section-head">
