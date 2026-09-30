@@ -63,9 +63,17 @@
     }
 
     .brand{
-      font-weight:800;
-      letter-spacing:-.03em;
+      display:inline-flex;
+      align-items:center;
       text-decoration:none;
+      flex:0 0 auto;
+    }
+
+    .brand img{
+      display:block;
+      width:220px;
+      max-width:38vw;
+      height:auto;
     }
 
     .nav{
@@ -173,22 +181,6 @@
       font-size:clamp(22px,3vw,31px);
       line-height:1.28;
       letter-spacing:-.02em;
-    }
-    .shop-preview{
-      margin:26px 0 0;
-      padding:10px;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:var(--white);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-
-    .shop-preview img{
-      display:block;
-      width:100%;
-      height:auto;
-      border-radius:20px;
     }
 
     .section{
@@ -409,6 +401,7 @@
     @media (max-width:760px){
       .site-header{position:static}
       .header-inner{padding:14px 0;align-items:flex-start;flex-direction:column;gap:10px}
+      .brand img{width:190px;max-width:70vw}
       .nav{gap:4px}
       .nav a{padding:6px 9px;font-size:13px}
       main{padding-top:20px}
@@ -433,7 +426,9 @@
 
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="#top">Holiday Cards TO</a>
+      <a class="brand" href="#top" aria-label="Holiday Cards TO">
+        <img src="assets/holidaycardsTO-logo.webp" alt="Holiday Cards TO">
+      </a>
       <nav class="nav" aria-label="Page sections">
         <a href="#benefits">What you get</a>
         <a href="#participation">Participation</a>
@@ -473,17 +468,7 @@
         </div>
       </div>
     </section>
-
-
-    <figure class="shop-preview">
-      <img
-        src="assets/holidaycards-preview.webp"
-        alt="Preview of the Holiday Cards TO online shop"
-        loading="lazy"
-      />
-    </figure>
-
-    <section class="section" id="benefits" aria-labelledby="benefits-title">
+<section class="section" id="benefits" aria-labelledby="benefits-title">
       <div class="section-head">
         <span class="section-label">What you get</span>
         <h2 id="benefits-title">More than a place to list your cards.</h2>
